@@ -1,0 +1,27 @@
+The idea: the audio being played on the desktop and the audio in the surrounding being input through the microphone
+can be used to convert to text using whisper. Using this library, one hour can be converted to text within a minute.
+The algorithm will be listening the whole time in intervals of 5 mintues. Each interval can be converted to text.
+The interval needs to be more than a minute, for whisper to detect all audios before new audios are added.
+Now this text can be converted to list of sentences and processed,
+Before inserting them into a vector database by creating their embedding.
+
+Now if you're watching a youtube video, and you just forgot something that they said, you don't need to rewind.
+You just need to ask your personal AI model and it will query the vector database for you.
+then using the output of the vector database as context, it will reply to you.
+This can be made into a chrome extension.
+
+Also, 2 more layers of audio can be taken in 2 overlapping intervals of 3 seconds each, to detect "Hey Whisper"
+and then that can activate the personal AI to converse with the user.
+In conversation, try to distinguish speech from silence.
+libraries to be used: openai-whisper, and a vector database library
+
+step 1: taking in audio, dividing into 5-minute intervals
+step 2: feeding audio into whisper and creating text out of it
+step 3: processing the text into different sentences/paragraphs.
+step 4: storing the sentences/paragraphs in the database.
+step 5: QA retrieval upon activation
+
+so there are 3 different python processes going on:
+1. converting speech to text to embedding in the database.
+2. checking for "Hey Whisper"
+3. langchain agent using tools for querying the vector database.

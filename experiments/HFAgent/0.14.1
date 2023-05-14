@@ -1,0 +1,49 @@
+Collecting git+https://github.com/huggingface/transformers@v4.29.0
+  Cloning https://github.com/huggingface/transformers (to revision v4.29.0) to c:\users\subod\appdata\local\temp\pip-req-build-fdpzk1vh
+  Resolved https://github.com/huggingface/transformers to commit e9da9da8f64670e366fb6eaaa293ea97429f7aab
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting huggingface_hub
+  Downloading huggingface_hub-0.14.1-py3-none-any.whl (224 kB)
+     -------------------------------------- 224.5/224.5 kB 4.6 MB/s eta 0:00:00
+Collecting diffusers
+  Downloading diffusers-0.16.1-py3-none-any.whl (934 kB)
+     ------------------------------------- 934.9/934.9 kB 20.1 MB/s eta 0:00:00
+Requirement already satisfied: filelock in d:\desktop\work\the ai collaborative\aicollab\lib\site-packages (from huggingface_hub) (3.12.0)
+Collecting fsspec (from huggingface_hub)
+  Downloading fsspec-2023.5.0-py3-none-any.whl (160 kB)
+     -------------------------------------- 160.1/160.1 kB 9.4 MB/s eta 0:00:00
+Requirement already satisfied: requests in d:\desktop\work\the ai collaborative\aicollab\lib\site-packages (from huggingface_hub) (2.30.0)
+Requirement already satisfied: tqdm>=4.42.1 in d:\desktop\work\the ai collaborative\aicollab\lib\site-packages (from huggingface_hub) (4.65.0)
+Requirement already satisfied: pyyaml>=5.1 in d:\desktop\work\the ai collaborative\aicollab\lib\site-packages (from huggingface_hub) (6.0)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in d:\desktop\work\the ai collaborative\aicollab\lib\site-packages (from huggingface_hub) (4.5.0)
+Requirement already satisfied: packaging>=20.9 in d:\desktop\work\the ai collaborative\aicollab\lib\site-packages (from huggingface_hub) (23.1)
+Requirement already satisfied: numpy>=1.17 in d:\desktop\work\the ai collaborative\aicollab\lib\site-packages (from transformers==4.29.0) (1.24.3)
+Requirement already satisfied: regex!=2019.12.17 in d:\desktop\work\the ai collaborative\aicollab\lib\site-packages (from transformers==4.29.0) (2023.5.5)
+Collecting tokenizers!=0.11.3,<0.14,>=0.11.1 (from transformers==4.29.0)
+  Downloading tokenizers-0.13.3-cp39-cp39-win_amd64.whl (3.5 MB)
+     ---------------------------------------- 3.5/3.5 MB 36.8 MB/s eta 0:00:00
+Collecting Pillow (from diffusers)
+  Downloading Pillow-9.5.0-cp39-cp39-win_amd64.whl (2.5 MB)
+     ---------------------------------------- 2.5/2.5 MB 32.4 MB/s eta 0:00:00
+Collecting importlib-metadata (from diffusers)
+  Downloading importlib_metadata-6.6.0-py3-none-any.whl (22 kB)
+Requirement already satisfied: colorama in d:\desktop\work\the ai collaborative\aicollab\lib\site-packages (from tqdm>=4.42.1->huggingface_hub) (0.4.6)
+Collecting zipp>=0.5 (from importlib-metadata->diffusers)
+  Using cached zipp-3.15.0-py3-none-any.whl (6.8 kB)
+Requirement already satisfied: charset-normalizer<4,>=2 in d:\desktop\work\the ai collaborative\aicollab\lib\site-packages (from requests->huggingface_hub) (3.1.0)
+Requirement already satisfied: idna<4,>=2.5 in d:\desktop\work\the ai collaborative\aicollab\lib\site-packages (from requests->huggingface_hub) (3.4)
+Requirement already satisfied: urllib3<3,>=1.21.1 in d:\desktop\work\the ai collaborative\aicollab\lib\site-packages (from requests->huggingface_hub) (2.0.2)
+Requirement already satisfied: certifi>=2017.4.17 in d:\desktop\work\the ai collaborative\aicollab\lib\site-packages (from requests->huggingface_hub) (2023.5.7)
+Building wheels for collected packages: transformers
+  Building wheel for transformers (pyproject.toml): started
+  Building wheel for transformers (pyproject.toml): finished with status 'done'
+  Created wheel for transformers: filename=transformers-4.29.0-py3-none-any.whl size=7065960 sha256=ebce02910d6f7dcaf0511b3bb0fa3a995d7c4bb88206066ff52fc6707521aa09
+  Stored in directory: C:\Users\subod\AppData\Local\Temp\pip-ephem-wheel-cache-bznfc3zm\wheels\6d\33\a5\a0ee84efb6c888f87968a17b58d7b747097001356890a9c40f
+Successfully built transformers
+Installing collected packages: tokenizers, zipp, Pillow, fsspec, importlib-metadata, huggingface_hub, transformers, diffusers
+Successfully installed Pillow-9.5.0 diffusers-0.16.1 fsspec-2023.5.0 huggingface_hub-0.14.1 importlib-metadata-6.6.0 tokenizers-0.13.3 transformers-4.29.0 zipp-3.15.0
